@@ -52,7 +52,7 @@ public class Main {
                 min = value;
             }
         }
-
+        // return the minimum value
         return min;
     }
 
