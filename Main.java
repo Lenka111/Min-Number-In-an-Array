@@ -1,3 +1,4 @@
+//Elena Voinu
 // find minimum number in  an array
 import java.util.Arrays;
 import java.util.Scanner;
@@ -8,13 +9,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Enter c0unt: ");
+        System.out.println("Enter count: ");
         int count = sc.nextInt();
         sc.nextLine();
 
         int[]array = readIntegers(count);
+        
+        //display the array contents on the screen
         System.out.println(Arrays.toString(array));
+        
         int result = findMinNumber(array);
+        //display the minimum value in the array
         System.out.println(result + " is the minimum value in the array");
 
 
@@ -37,9 +42,10 @@ public class Main {
 
     private static int findMinNumber(int[] array){
         int min = Integer.MAX_VALUE;
-        for(int i = 0; i < array.length; i++)
-        {
-            // retrieve the value at position i
+        
+        //cycle through the loop
+        for(int i = 0; i < array.length; i++){ 
+            // retrieve the value stored at position i
             int value = array[i];
             //compare each value to i with each iteration
             if(value < min){
